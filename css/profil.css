@@ -1,0 +1,21 @@
+.row {
+  position: relative;
+}
+
+.profile-image {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.bg-gray {
+  padding-top: 10px !important;
+  background-color: #949494;
+  height: 10vh;
+}

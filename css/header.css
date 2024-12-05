@@ -1,0 +1,14 @@
+.logo-nav {
+  width: 7vh;
+}
+.nav-link,
+.dropdown-item {
+  font-size: 2.5vh;
+}
+
+.navbar {
+  background-color: white !important;
+}
+.border-bot {
+  border-bottom: 1px black solid;
+}
