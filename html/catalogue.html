@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accueil</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
+    <link rel="icon" href="img/white-logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bot">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img class="logo-nav" src="/img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse gap" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link ps-3" href="/index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Catalogue</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Moi
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="profil.html">Mon profil</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mes favoris</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Se connecter / S'inscrire</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container-fluid">
+          <div class="row text-center pt-5 row-gap-4">
+            <div class="col-12 p-5"><h1>Le Catalogue</h1></div>
+            <div class="col-10"></div>
+            <!-- Espacement -->
+            <div class="col-12 col-sm-2 dropdown">
+              <button
+                class="btn btn-outline-dark dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Filtrer
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Prix (croissant)</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Prix (décroissant)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">État (meilleur au pire)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Catégorie</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article1"
+              >
+                <div class="card h-100">
+                  <img src="/img/grinch.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Pull Grinch - 35€</h5>
+                    <p class="card-text">
+                      Pull Grinch, peut utilisé en très bon état
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 15 mins</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Pull Grinch
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Pull Grinch, peu utilisé en très bon état.</p>
+                    <ul class="text-start">
+                      <li>Très bon état</li>
+                      <li>Taille M</li>
+                      <li>Prix : 35€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <a href="/html/vetements.html">
+                      <button type="button" class="btn btn-primary">
+                        Aller à la page
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article2"
+              >
+                <div class="card h-100">
+                  <img src="/img/tabou.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Tabouret - 10€</h5>
+                    <p class="card-text">
+                      Tabouret, peu utilisé et en bon état (en double)
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 2 heures</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article2"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Tabouret
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Tabouret, peu utilisé et en bon état</p>
+                    <ul class="text-start">
+                      <li>Bon état</li>
+                      <li>40cm de hauteur & 30cm de largeur</li>
+                      <li>Prix : 10€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <a href="/html/objet.html">
+                      <button type="button" class="btn btn-primary">
+                        Aller à la page
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article3"
+              >
+                <div class="card h-100">
+                  <img src="/img/fete.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Conféties et autres - 35€</h5>
+                    <p class="card-text">
+                      Conféties et autres accéssoires pour une fête
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 2 jours</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article3"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Conféties et autres
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Conféties et autres accéssoires pour une fête.</p>
+                    <ul class="text-start">
+                      <li>Neuf</li>
+                      <li>Prix : 12€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article4"
+              >
+                <div class="card">
+                  <img
+                    src="/img/maillot-k.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Maillot Karmine Corp - 50€</h5>
+                    <p class="card-text">
+                      Maillot Karmine Corp (meilleure team esport), très bon
+                      état
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 57 mins</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article4"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Maillot Karmine Corp
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Maillot Karmine Corp (meilleure team esport), très bon
+                      état
+                    </p>
+                    <ul class="text-start">
+                      <li>Très bon état</li>
+                      <li>Taille L</li>
+                      <li>Prix : 50€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article5"
+              >
+                <div class="card h-100">
+                  <img
+                    src="/img/maillot-alpine.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Maillot Alpine - 120€</h5>
+                    <p class="card-text">
+                      Maillot Alpine, neuf et signé par Ocon et Gasly
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 3 mins</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article5"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Maillot Alpine
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Maillot Alpine, neuf et signé par Ocon et Gasly</p>
+                    <ul class="text-start">
+                      <li>Neuf</li>
+                      <li>Taille L</li>
+                      <li>Prix : 120€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article6"
+              >
+                <div class="card h-100">
+                  <img src="/img/miroir.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Lot de miroirs - 30€</h5>
+                    <p class="card-text">
+                      Lot de miroirs en très bon état, quelques rayures
+                      invisibles
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 7 heures</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article6"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Lot de miroirs
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>
+                      Lot de miroirs en très bon état, quelques rayures
+                      invisibles
+                    </p>
+                    <ul class="text-start">
+                      <li>Très bon état</li>
+                      <li>Prix : 30€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button◊
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article7"
+              >
+                <div class="card h-100">
+                  <img src="/img/kway.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Manteau Kway - 90€</h5>
+                    <p class="card-text">
+                      Manteau Kway, peu utilisé en très bon état
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 4 heures</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button◊>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article7"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Manteau Kway
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Manteau Kway, peu utilisé en très bon état</p>
+                    <ul class="text-start">
+                      <li>Très bon état</li>
+                      <li>Taille M</li>
+                      <li>Prix : 90€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <button
+                type="button"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#article8"
+              >
+                <div class="card h-100">
+                  <img src="/img/pull.png" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Pull Ralph - 60€</h5>
+                    <p class="card-text">
+                      Chemise Zara, en bon état, acheté il y a 2 ans avec la
+                      facture
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Posté il y a 16 heures</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </button>
+            </div>
+
+            <!-- Button trigger modal -->
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="article8"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Chemise Zara
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Chemise Zara, peut utilisé en très bon état.</p>
+                    <ul class="text-start">
+                      <li>Très bon état</li>
+                      <li>Taille M</li>
+                      <li>Prix : 35€</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Aller à la page
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer-basic">
+      <hr />
+      <footer>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a
+          ><a href="#"><i class="fa-brands fa-linkedin"></i></a
+          ><a href="#"><i class="fa-brands fa-twitter"></i></a
+          ><a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="../html/accueil.html">Accueil</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/catalogue.html">Catalogue</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/Formulaire.html">Connexion</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/favoris.html">Favoris</a>
+          </li>
+          <li class="list-inline-item"><a href="#"></a></li>
+        </ul>
+        <p class="copyright">
+          Company Name © 2024 <a href="mention-legal.html">Mention Légal</a>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
