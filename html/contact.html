@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article à Vendre</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+
+    <link rel="stylesheet" href="/css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bot">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"
+            ><img class="logo-nav" src="/img/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse gap" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link ps-3" href="/index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/catalogue.html">Catalogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Moi
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mon profil</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mes favoris</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Se connecter / S'inscrire</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Rechercher"
+                aria-label="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1 class="d-flex justify-content-center pt-5">
+          Page d'aide / Contact
+        </h1>
+      </section>
+      <section class="p-5">
+        <div class="container">
+          <div class="text-center mt-5">
+            <h2>Nous transmettre un message</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-7 mx-auto pt-5">
+              <div class="card mt-2 mx-auto p-4 bg-light">
+                <div class="card-body bg-light">
+                  <div class="container">
+                    <form id="contact-form" role="form">
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_name">Prénom *</label>
+                              <input
+                                id="form_name"
+                                type="text"
+                                name="name"
+                                class="form-control"
+                                required="required"
+                                data-error="Le prénom est obligatoire."
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="form_lastname">Nom *</label>
+                              <input
+                                id="form_lastname"
+                                type="text"
+                                name="surname"
+                                class="form-control"
+                                required="required"
+                                data-error="Le nom est obligatoire."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input
+                                id="form_email"
+                                type="email"
+                                name="email"
+                                class="form-control"
+                                required="required"
+                                data-error="L'email est obligatoire."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea
+                                id="form_message"
+                                name="message"
+                                class="form-control"
+                                rows="4"
+                                required="required"
+                                data-error="Il nous faut votre demande."
+                              ></textarea>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12 pt-3">
+                            <input
+                              type="submit"
+                              class="btn btn-primary btn-send pt-2 btn-block"
+                              value="Envoyer"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 d-flex justify-content-center"><h2>FAQ</h2></div>
+            <div class="col-8 p-5">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Question 1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Doloribus modi voluptatum, vitae nemo necessitatibus
+                      quisquam voluptate, maxime dicta hic itaque quibusdam
+                      repellendus neque perferendis reiciendis atque. Cupiditate
+                      ea facere repellat!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Question 2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Exercitationem, officia. Quisquam placeat iusto qui
+                      corrupti asperiores officiis quidem dolorem? Ipsam maxime
+                      fuga adipisci pariatur, a aut nemo quisquam optio
+                      dignissimos excepturi, vel veniam dolor illo facilis
+                      repellendus veritatis. Neque, eligendi.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Question 3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum illo sapiente ad itaque dignissimos nihil
+                      aspernatur, debitis eveniet architecto animi consectetur
+                      ab impedit hic tempore fugit, consequuntur aliquid soluta
+                      distinctio laborum accusantium facere reiciendis dolor
+                      voluptates officia! Quam, a est?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <h3>
+                Notre email :
+                <a class="text-decoration-none" href="mailto:contact@restyle.fr"
+                  >contact@restyle.fr</a
+                >
+              </h3>
+            </div>
+            <br />
+            <div class="col-12 d-flex justify-content-center">
+              <h3>
+                Notre téléphone :
+                <a class="text-decoration-none" href="tel:33246238493"
+                  >02 46 23 84 93</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="footer-basic">
+      <hr />
+      <footer>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a
+          ><a href="#"><i class="fa-brands fa-linkedin"></i></a
+          ><a href="#"><i class="fa-brands fa-twitter"></i></a
+          ><a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="../html/accueil.html">Accueil</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/catalogue.html">Catalogue</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/Formulaire.html">Connexion</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="../html/favoris.html">Favoris</a>
+          </li>
+          <li class="list-inline-item"><a href="#"></a></li>
+        </ul>
+        <p class="copyright">
+          Company Name © 2024 <a href="mention-legal.html">Mention Légal</a>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
