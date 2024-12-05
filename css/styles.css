@@ -9,14 +9,12 @@
 /* CARDS */
 
 .card {
-  background-color: white;
-  color: black;
-  height: 100%;
-  box-shadow: 1px 4px 10px white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card-img-top {
+  height: 50vh;
+  object-fit: cover;
 }
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.2);
-  box-shadow: 1px 4px 10px white;
 }
