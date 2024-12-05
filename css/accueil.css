@@ -146,8 +146,8 @@ h2 {
   outline: 0;
 }
 
-.intro {
-  background-image: url("/img/ciel-bleu.png");
+.intro{
+  background-image: url("../img/ciel-bleu.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
