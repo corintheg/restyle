@@ -1,7 +1,7 @@
 User-agent: *
 
 Disallow: /error404.html
-Disallow: /mentions-legales.html
+Disallow: /html/mentions-legales.html
 
 Allow: /
 
