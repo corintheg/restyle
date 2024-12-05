@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Page d'accueil -->
+<url>
+    <loc>index.html</loc>
+    <priority> 1.0</priority>
+    <changefreq>daily</changefreq>
+</url>
+
+        <!-- Page du catalogue -->
+<url>
+<loc>catalogue.html</loc>
+<priority> 0.8</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page du contact -->
+<url>
+<loc>contact.html</loc>
+<priority> 0.7</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page des favoris -->
+<url>
+<loc>favoris.html</loc>
+<priority> 0.7</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page d'inscription / connexion -->
+<url>
+<loc>formulaire.html</loc>
+<priority> 0.8</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page d'article à vendre -->
+<url>
+<loc>objet.html</loc>
+<priority> 0.6</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page d'article à vendre -->
+<url>
+<loc>vetements.html</loc>
+<priority> 0.6</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page d'article à vendre -->
+<url>
+<loc>deco.html</loc>
+<priority> 0.6</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page du catalogue -->
+<url>
+<loc>profil.html</loc>
+<priority> 0.7</priority>
+<changefreq>weekly</changefreq>
+</url>
+
+
+        <!-- Page Mentions Legales -->
+<url>
+<loc>mentions-legales.html</loc>
+<priority> 0.3</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page 404 -->
+<url>
+<loc>404.html</loc>
+<priority> 0.3</priority>
+<changefreq>weekly</changefreq>
+</url>
+
