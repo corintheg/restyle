@@ -118,13 +118,13 @@ h2 {
   color: black;
   margin-bottom: 6px;
 }
-.form-control {
+.email {
   height: 50px;
   border-color: black;
   border-radius: 2px 0px 0px 2px;
 }
 
-.form-control:focus {
+.email:focus {
   box-shadow: none !important;
   border: 2px solid #243c4f;
   border-color: none;
@@ -139,7 +139,7 @@ h2 {
   border-left: solid 1px black;
 }
 
-.form-control:focus {
+.email:focus {
   color: #000;
   background-color: white;
   border-color: #80bdff;
